@@ -12,22 +12,17 @@ The goals are:
     
 - **Statistical Modelling:**
 
-Build a linear regression model to analyze the relationship between location features (latitude, longitude) and the number of available bikes at stations.
-Interpret the model output and assess the significance of the features.
-Classification Model:
+Build a linear regression model to analyze the relationship between location features and the number of available bikes at stations.
 
-Transform the regression model into a classification model to predict bike availability as a binary outcome.
-Evaluate the classification model's performance using metrics like accuracy and classification report.
-Integration with External APIs:
+- **Classification Model:**
+  - Transform the regression model into a classification model to predict bike availability as a binary outcome.
+  - Evaluate the classification model's performance using metrics like accuracy and classification report.
 
-Incorporate external APIs such as Foursquare and Yelp to enrich the dataset with additional features.
-Explore how characteristics of nearby places impact bike availability.
-Database Integration:
+- **Database Integration:**
+  - Store the processed data and results in an SQLite database for future reference and analysis.
 
-Store the processed data and results in an SQLite database for future reference and analysis.
-Documentation and Reporting:
-
-Maintain a well-structured and documented Jupyter Notebook, explaining each step of the analysis and modelling process.
+- **Documentation and Reporting:**
+  - Maintain a well-structured and documented Jupyter Notebook, explaining each step of the analysis and modelling process.
 Provide a comprehensive README file that outlines the project's objectives, methodologies, and key findings.
 Visualization:
 
