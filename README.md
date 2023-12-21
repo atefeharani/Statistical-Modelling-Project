@@ -85,8 +85,27 @@ Station information includes station name, location, available bikes, empty slot
 - Payment options include key, transit card, credit card, and phone.
 - Stations support both bike renting and returning.
 
-This information can be further utilized for detailed analysis, optimization, and improving the bike-sharing experience in Toronto.
 
+```python
+stations = data.get("network", {}).get("stations", [])
+
+station_names = []
+latitudes = []
+longitudes = []
+num_bikes = []
+
+
+for station in stations:
+    station_names.append(station.get("name", "N/A"))
+    latitudes.append(station.get("latitude", "N/A"))
+    longitudes.append(station.get("longitude", "N/A"))
+    num_bikes.append(station.get("free_bikes", "N/A"))
+
+print("Station Names:", station_names)
+print("Latitudes:", latitudes)
+print("Longitudes:", longitudes)
+print("Number of Available Bikes:", num_bikes)
+```
 
 ## Challenges 
 (discuss challenges you faced in the project)
