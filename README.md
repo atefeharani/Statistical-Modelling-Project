@@ -69,6 +69,9 @@ response = requests.get(url)
 data = response.json()
 data
 ```
+
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/6a3a706e-937e-439d-9ee9-6d1cb83577f0)
+
 ## Challenges 
 (discuss challenges you faced in the project)
 
