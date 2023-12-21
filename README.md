@@ -58,8 +58,17 @@ The goals are:
 
 
 ## Results
-(fill in what you found about the comparative quality of API coverage in your chosen area and the results of your model.)
+### Bike Share Toronto Network Overview
 
+```python
+import requests
+
+url = "http://api.citybik.es/v2/networks/bixi-toronto"
+response = requests.get(url)
+
+data = response.json()
+data
+```
 ## Challenges 
 (discuss challenges you faced in the project)
 
