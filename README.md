@@ -127,6 +127,26 @@ df.head()
 ```
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/06b27cbb-b57f-4638-9c05-84072ba1726f)
 
+### Foursquare API Integration
+
+The following code demonstrates how to make an API request to Foursquare.
+
+```python
+import requests
+
+url = "https://api.foursquare.com/v3/places/search?radius=1000"
+
+headers = {
+    "accept": "application/json",
+    "Authorization": "fsq3X8Azy660TCvS/+1UqQfMJViXsw44ZJjxaeV6nC1RYOk="
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
+
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/c5794213-b22e-4704-916f-841e82005302)
+
 
 ## Challenges 
 (discuss challenges you faced in the project)
