@@ -173,6 +173,7 @@ data = resp.json()
 data
 ```
 
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/3fe9f30b-387f-4421-a383-7a0bca9adc4d)
 
 
 ## Challenges 
