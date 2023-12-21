@@ -12,7 +12,7 @@ The goals are:
     
 - **Statistical Modelling:**
 
-Build a linear regression model to analyze the relationship between location features and the number of available bikes at stations.
+  - Build a linear regression model to analyze the relationship between location features and the number of available bikes at stations.
 
 - **Classification Model:**
   - Transform the regression model into a classification model to predict bike availability as a binary outcome.
