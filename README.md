@@ -252,6 +252,20 @@ df_fs2
 ```
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/d51b6472-eb55-4408-ba32-647124e34f2f)
 
+The provided code utilizes the pandas library to sort a DataFrame (`df_fs`) of restaurant data based on their ratings in descending order. The top 10 highest-rated restaurants are then extracted and stored in a new DataFrame (`top_10_restaurants`).
+
+```python
+import pandas as pd
+
+df_sorted = df_fs.sort_values(by='rating', ascending=False)
+
+top_10_restaurants = df_sorted.head(10)
+
+top_10_restaurants
+```
+
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/0fe15af1-8bf9-4572-a43a-76ecc2a98d0d)
+
 
 ## Challenges 
 (discuss challenges you faced in the project)
