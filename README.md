@@ -72,6 +72,22 @@ data
 
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/6a3a706e-937e-439d-9ee9-6d1cb83577f0)
 
+
+The data retrieved from the Bike Share Toronto network provides valuable information about the available bike stations, their locations, and current bike status.   
+The network information includes network name, city, country, latitude, longitude, companies, GBFS Href.   
+
+Station information includes station name, location, available bikes, empty slots
+
+### Observations
+
+- The bike stations have varying numbers of available bikes and empty slots.
+- Some stations have e-bikes available.
+- Payment options include key, transit card, credit card, and phone.
+- Stations support both bike renting and returning.
+
+This information can be further utilized for detailed analysis, optimization, and improving the bike-sharing experience in Toronto.
+
+
 ## Challenges 
 (discuss challenges you faced in the project)
 
