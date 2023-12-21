@@ -144,7 +144,7 @@ headers = {
 response = requests.get(url, headers=headers)
 
 print(response.text)
-
+```
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/c5794213-b22e-4704-916f-841e82005302)
 
 
