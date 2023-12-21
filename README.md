@@ -147,6 +147,33 @@ print(response.text)
 ```
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/c5794213-b22e-4704-916f-841e82005302)
 
+This section processes data from the Foursquare API response, extracts relevant information, and organizes it into a data frame for further analysis.
+
+```python
+# api settings
+client_id = "XRE0S0B3T2I2IOZNA3FQLPO52LJBCONQHSW5TYPIX2BX5RLM"
+client_secret = "UDMTB32WT5RCTF5EOF01MN0XY4W5GWRWGKRSIGZJP24TMFKY"
+v = '20231010'
+
+location = '43.653226,-79.3831843' # Toronto
+url = 'https://api.foursquare.com/v2/venues/explore'
+
+params = {
+    'client_id': client_id,
+    'client_secret': client_secret,
+    'v': v,
+    'll': location,
+    'query': 'bike',
+    'limit': 50,
+    'radius': 1000
+}
+
+resp = requests.get(url=url, params=params)
+data = resp.json()
+data
+```
+
+
 
 ## Challenges 
 (discuss challenges you faced in the project)
