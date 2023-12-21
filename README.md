@@ -175,6 +175,46 @@ data
 
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/3fe9f30b-387f-4421-a383-7a0bca9adc4d)
 
+The code below retrieves detailed information about restaurants from the Foursquare API, including ratings, names, addresses, price categories, likes, and more.
+
+```python
+# restaurant details (rating,name,place, ...)
+
+url = 'https://api.foursquare.com/v2/venues/explore'
+all_restaurants = []
+for restaurant in data['response']['groups'][0]['items']:
+    id_restaurant = restaurant['venue']['id']
+
+    url = f'https://api.foursquare.com/v2/venues/{id_restaurant}'
+    params = {
+        'client_id': client_id,
+        'client_secret': client_secret,
+        'v': v
+    }
+
+    resp = requests.get(url=url, params=params)
+
+    if resp.status_code == 200:
+        restaurant_data = resp.json()
+        venue = restaurant_data['response']['venue']
+
+        all_restaurants.append(
+            {
+            'name': venue['name'],
+            'address': ', '.join(venue['location']['formattedAddress']),
+            #'url': venue['url'],
+            'price_category': venue['price']['tier'] if venue.get('price') else None,
+            'likes': venue['likes']['count'],
+            'rating': venue['rating'],
+            'api': 'foursquare',
+        })
+df_fs = pd.DataFrame(all_restaurants)
+df_fs
+```
+
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/ccda729b-6072-40c5-bea4-12f2c43a7cf2)
+
+
 
 ## Challenges 
 (discuss challenges you faced in the project)
