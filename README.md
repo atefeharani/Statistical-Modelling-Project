@@ -1,7 +1,11 @@
 # Final-Project-Statistical-Modelling-with-Python
 
 ## Project/Goals
-(fill in your description and goals here)
+The "Statistical Modelling with Python" project aims to leverage statistical modelling techniques using the Python programming language. The project involves the integration of various data sources, including Foursquare and Yelp. The primary goals are to explore, analyze, and model the availability of bikes at different stations.      
+The goals are:   
+
+
+
 
 ## Process
 ### (your step 1)
