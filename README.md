@@ -215,6 +215,43 @@ df_fs
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/ccda729b-6072-40c5-bea4-12f2c43a7cf2)
 
 
+```python
+import requests
+
+api_key = "cFFfkZl10-YC0eRoV3TuuH5C3jnbXdUm9ZkF7xm_S2abcOI4dz678UhWbmcYtmjnOp2I9TmISOw3j5S-Pjhgd46kFGqBHL4Z40BeLo6xBskKc5URK5AZMTw8fct-ZXYx"
+url = 'https://api.yelp.com/v3/businesses/search'
+headers = {
+    'Authorization': f'Bearer {api_key}'
+}
+params = {
+    'term': 'restaurants',
+    'location':  '40.7243,-74.0018',  # NYC
+    'radius': 1000
+}
+
+response = requests.get(url, headers=headers, params=params)
+data = response.json()
+all_restaurants = []
+
+for business in data['businesses']:
+    name = business['name']
+    rating = business['rating']
+    location = business['location']['address1']
+
+    all_restaurants.append(
+        {
+            'name': name,
+            'address': location,
+            'rating': rating,
+            'api': 'yelp',
+        }
+    )
+
+df_fs2 = pd.DataFrame(all_restaurants)
+df_fs2
+```
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/d51b6472-eb55-4408-ba32-647124e34f2f)
+
 
 ## Challenges 
 (discuss challenges you faced in the project)
