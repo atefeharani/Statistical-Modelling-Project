@@ -22,23 +22,11 @@ Build a linear regression model to analyze the relationship between location fea
   - Store the processed data and results in an SQLite database for future reference and analysis.
 
 - **Documentation and Reporting:**
-  - Maintain a well-structured and documented Jupyter Notebook, explaining each step of the analysis and modelling process.
-Provide a comprehensive README file that outlines the project's objectives, methodologies, and key findings.
-Visualization:
+  - Maintain a well-structured and documented Jupyter Notebook.
+  - Provide a comprehensive README file that outlines the project's objectives, methodologies, and key findings.
 
-Create visualizations to effectively communicate insights and patterns identified during the analysis.
-Use maps, charts, and graphs to present information in an accessible manner.
-Conclusion and Recommendations:
-
-Summarize the key findings from the statistical modelling and analysis.
-Offer recommendations or insights for further exploration or decision-making.
-Collaboration and Sharing:
-
-Foster collaboration by making the project code and documentation accessible to others.
-Encourage sharing of insights and potential improvements through collaboration platforms.
-This project aims to demonstrate the application of statistical modelling techniques in a real-world scenario, providing valuable insights into the relationship between location-based features and bike availability at stations.
-
-
+- Conclusion and Recommendations:
+  - Summarize the key findings.
 
 
 
