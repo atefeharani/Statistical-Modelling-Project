@@ -86,6 +86,9 @@ Station information includes station name, location, available bikes, empty slot
 - Stations support both bike renting and returning.
 
 
+
+The following code retrieves information about bike stations from a web API response. It initializes empty lists to store details such as station names, latitudes, longitudes, and the number of available bikes. Through iteration over the stations in the API response, the code collects and appends these details to their respective lists. The output displays a summary of each bike station, including its name, geographical coordinates, and the current number of available bikes. 
+
 ```python
 stations = data.get("network", {}).get("stations", [])
 
