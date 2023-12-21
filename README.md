@@ -32,7 +32,6 @@ The goals are:
 
 ## Process
 
-## Process
 
 - **Data Collection:**
    - Gathered data from various sources, including Foursquare, Yelp, and CityBikes API.
