@@ -113,6 +113,21 @@ print("Number of Available Bikes:", num_bikes)
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/9450e660-6030-43e7-bed8-2a57c938e359)
 
 
+The following code is used to create a data frame that consists of four columns: 'Station Names,' 'Latitudes,' 'Longitudes,' and 'Number of Available Bikes'.
+
+```python
+import pandas as pd
+df = pd.DataFrame({
+'Station Names': station_names,
+'Latitudes': latitudes,
+'Longitudes': longitudes,
+'Number of Available Bikes': num_bikes
+})
+df.head()
+```
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/06b27cbb-b57f-4638-9c05-84072ba1726f)
+
+
 ## Challenges 
 (discuss challenges you faced in the project)
 
