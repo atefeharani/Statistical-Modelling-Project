@@ -110,6 +110,9 @@ print("Longitudes:", longitudes)
 print("Number of Available Bikes:", num_bikes)
 ```
 
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/9450e660-6030-43e7-bed8-2a57c938e359)
+
+
 ## Challenges 
 (discuss challenges you faced in the project)
 
