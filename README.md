@@ -31,8 +31,32 @@ The goals are:
 
 
 ## Process
-### (your step 1)
-### (your step 2)
+
+## Process
+
+- **Data Collection:**
+   - Gathered data from various sources, including Foursquare, Yelp, and CityBikes API.
+   - Utilized the `requests` library to fetch information about bike stations, restaurants.
+
+- **Data Preprocessing:**
+   - Merged datasets to create a comprehensive DataFrame (`new_df`).
+   - Stored relevant information in a SQLite database.
+
+- **Statistical Modeling:**
+   - Built a linear regression model using the `statsmodels` library.
+   - Explored relationships between bike availability and location features (Latitudes, Longitudes).
+
+- **Classification Model:**
+   - Converted the regression model into a classification model.
+   - Used a threshold to classify predictions into two classes (0 or 1).
+
+- **README Completion:**
+   - Provided explanations for key steps in the project.
+
+- **Future Work:**
+   - Outlined potential enhancements for the project.
+
+
 
 ## Results
 (fill in what you found about the comparative quality of API coverage in your chosen area and the results of your model.)
