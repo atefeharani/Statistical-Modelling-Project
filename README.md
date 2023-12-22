@@ -266,6 +266,12 @@ top_10_restaurants
 
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/0fe15af1-8bf9-4572-a43a-76ecc2a98d0d)
 
+The provided code merges two DataFrames (`df_fs` and `df_fs2`) based on common columns such as 'name', 'address', 'rating', and 'api'. The merge is performed using an outer join, meaning that it includes all rows from both DataFrames.
+
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/5b670d9c-bf49-4c63-851d-1dcb53470157)
+
+
+
 
 ## Challenges 
 (discuss challenges you faced in the project)
