@@ -25,7 +25,7 @@ The goals are:
   - Maintain a well-structured and documented Jupyter Notebook.
   - Provide a comprehensive README file that outlines the project's objectives, methodologies, and key findings.
 
-- Conclusion and Recommendations:
+- **Conclusion and Recommendations:**
   - Summarize the key findings.
 
 
