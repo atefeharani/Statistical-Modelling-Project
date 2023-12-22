@@ -291,6 +291,16 @@ plt.show()
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/4e823dd1-e524-41e9-b786-ededb3dba0a9)
 
 
+### Storing Data in SQLite Database
+
+The provided code snippet demonstrates the process of storing DataFrames (`df_fs`, `df_fs2`, and `new_df`) into an SQLite database. This is particularly useful for persisting the results of your analysis.
+
+#### Instructions:
+1. Connect to an SQLite database and specify the path.
+2. Save DataFrame `df_fs` to an SQLite table named 'foursquare_data'.
+3. Save DataFrame `df_fs2` to an SQLite table named 'yelp_data'.
+4. Save DataFrame `new_df` to an SQLite table named 'merged_data'.
+5. Commit changes and close the database connection.
 
 
 ## Challenges 
