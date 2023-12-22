@@ -343,8 +343,49 @@ print("Number of rows in new_df:", len(new_df))
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/e99acaef-88b9-4219-8815-19cbcfd52be5)
 
 
+For statistical modeling using linear regression, the `statsmodels` library was employed. The provided code demonstrates the process of creating and fitting a linear regression model on the combined DataFrame (`new_df`), assuming the target variable is the 'Number of Available Bikes' and the features include 'Latitudes' and 'Longitudes'.
+
+```python
+import statsmodels.api as sm
+
+features = df[['Latitudes', 'Longitudes']]
+
+features = sm.add_constant(features)
+
+target = df['Number of Available Bikes']
+
+model = sm.OLS(target, features)
+
+results = model.fit()
+
+print(results.summary())
+```
+
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/ef953866-dde1-49f0-afc3-4ff521ac2fc9)
 
 
+
+In the following, the classification approach is used.
+
+```python
+import statsmodels.api as sm
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, classification_report
+
+features = df[['Latitudes', 'Longitudes']]
+features = sm.add_constant(features)
+target = df['Number of Available Bikes']
+model = sm.OLS(target, features)
+results = model.fit()
+predictions = results.predict(features)
+threshold = 0.5
+predicted_classes = (predictions > threshold).astype(int)
+actual_classes = (target > threshold).astype(int)
+accuracy = accuracy_score(actual_classes, predicted_classes)
+classification_report_output = classification_report(actual_classes, predicted_classes)
+
+```
 
 
 ## Challenges 
