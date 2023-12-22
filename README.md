@@ -293,7 +293,7 @@ plt.show()
 
 ### Storing Data in SQLite Database
 
-The provided code snippet demonstrates the process of storing DataFrames (`df_fs`, `df_fs2`, and `new_df`) into an SQLite database. This is particularly useful for persisting the results of your analysis.
+The provided code demonstrates the process of storing DataFrames (`df_fs`, `df_fs2`, and `new_df`) into an SQLite database.
 
 #### Instructions:
 1. Connect to an SQLite database and specify the path.
@@ -302,6 +302,21 @@ The provided code snippet demonstrates the process of storing DataFrames (`df_fs
 4. Save DataFrame `new_df` to an SQLite table named 'merged_data'.
 5. Commit changes and close the database connection.
 
+```python
+
+import sqlite3
+
+db_path =  "/content/my_database.db"
+conn = sqlite3.connect(db_path)
+df_fs.to_sql('foursquare_data', conn, if_exists='replace', index=False)
+df_fs2.to_sql('yelp_data', conn, if_exists='replace', index=False)
+new_df.to_sql('merged_data', conn, if_exists='replace', index=False)
+conn.commit()
+conn.close()
+
+print("Results have been stored in the SQLite database.")
+
+```
 
 ## Challenges 
 (discuss challenges you faced in the project)
