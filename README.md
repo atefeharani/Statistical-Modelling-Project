@@ -317,6 +317,35 @@ conn.close()
 print("Results have been stored in the SQLite database.")
 
 ```
+To ensure the successful joining of DataFrames and inspect the data, the code below displays the first few rows of each DataFrame (`df_fs`, `df_fs2`, and `new_df`).
+
+```python
+print("Original DataFrame (df_fs):")
+print(df_fs.head())
+
+print("\nOriginal DataFrame (df_fs2):")
+print(df_fs2.head())
+
+print("\nMerged DataFrame (new_df):")
+print(new_df.head())
+```
+
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/562c77b9-12b1-4e26-bb02-1913540943ce)
+
+Check the number of rows in each DataFrame:
+
+```python
+print("Number of rows in df_fs:", len(df_fs))
+print("Number of rows in df_fs2:", len(df_fs2))
+print("Number of rows in new_df:", len(new_df))
+```
+
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/e99acaef-88b9-4219-8815-19cbcfd52be5)
+
+
+
+
+
 
 ## Challenges 
 (discuss challenges you faced in the project)
