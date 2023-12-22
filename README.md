@@ -389,7 +389,11 @@ classification_report_output = classification_report(actual_classes, predicted_c
 
 
 ## Challenges 
-(discuss challenges you faced in the project)
+
+- Connecting to the APIs
+- Understanding API documentation for effective usage
 
 ## Future Goals
-(what would you do if you had more time?)
+
+- Experiment with more advanced machine learning models like ensemble methods or neural networks to improve prediction accuracy.
+
