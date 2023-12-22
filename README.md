@@ -274,6 +274,23 @@ new_df = df_fs.merge(df_fs2, on=['name', 'address', 'rating', 'api'], how='outer
 ![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/5b670d9c-bf49-4c63-851d-1dcb53470157)
 
 
+The provided code creates a scatter plot to visualize the relationship between the 'Rating' and 'Likes' columns in the merged DataFrame (`new_df`). The scatter plot helps to identify any patterns or trends between these two variables.
+
+
+```python
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.scatter(new_df['rating'], new_df['likes'])
+plt.title('Relationship between Rating and Likes')
+plt.xlabel('Rating')
+plt.ylabel('Likes')
+plt.show()
+```
+
+![image](https://github.com/atefeharani/Statistical-Modelling-Project/assets/67924193/4e823dd1-e524-41e9-b786-ededb3dba0a9)
+
+
 
 
 ## Challenges 
